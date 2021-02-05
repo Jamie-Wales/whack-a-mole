@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.board__container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1400px;
+	margin: 200px auto;
+}
+
+.board__hole {
+	height: 300px;
+	width: 300px;
+	background: url(../img/Daco_5134523.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 10px;
+	animation: opacity;
+	opacity: 1;
+}
+
+.board__mole {
+	opacity: 0;
+}
+
+.board__mole.board__mole {
+	opacity: 1;
+	animation-name: mole;
+	animation-duration: 2s;
+	background: url('./img/Daco_622351.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	mask-border-slice: 20px;
+}
+
+@keyframes mole {
+	from {
+		display: none;
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	to {
+		opacity: 1;
+	}
+}
