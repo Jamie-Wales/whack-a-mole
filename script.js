@@ -49,6 +49,7 @@ function whack(e) {
             clearInterval(interval)
             holes.forEach(element => {
                 element.classList.remove('board__mole')
+
                 
             })
 
