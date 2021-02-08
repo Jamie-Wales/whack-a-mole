@@ -22,7 +22,7 @@ body {
 .board__hole {
 	height: 300px;
 	width: 300px;
-	background: url('../img/Daco_5134523.png');
+	background: url('./img/Daco_5134523.png');
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -39,7 +39,7 @@ body {
 	opacity: 1;
 	animation-name: mole;
 	animation-duration: 2s;
-	background: url('../img/Daco_622351.png');
+	background: url('./img/Daco_622351.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	mask-border-slice: 20px;
